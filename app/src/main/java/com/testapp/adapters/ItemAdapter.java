@@ -1,4 +1,4 @@
-package com.testapp;
+package com.testapp.adapters;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -29,7 +29,7 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.MyAdapter> {
         this.data = data;
     }
 
-    List<Item> data;
+    public List<Item> data;
     Context context;
     private LayoutInflater layoutInflater;
 

@@ -1,4 +1,4 @@
-package com.testapp;
+package com.testapp.utils;
 
 import com.testapp.model.Item;
 

@@ -1,4 +1,4 @@
-package com.testapp;
+package com.testapp.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -10,6 +10,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.testapp.utils.CustomComparator;
+import com.testapp.adapters.ItemAdapter;
+import com.testapp.R;
 import com.testapp.model.Item;
 import com.testapp.model.Main;
 import com.testapp.network.Initializator;
