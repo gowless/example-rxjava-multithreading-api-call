@@ -13,6 +13,11 @@ import com.testapp.model.Item;
 import java.util.List;
 
 public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.MyAdapter> {
+    @Override
+    public void registerAdapterDataObserver(@NonNull RecyclerView.AdapterDataObserver observer) {
+        super.registerAdapterDataObserver(observer);
+
+    }
 
     public ItemAdapter(List<Item> data, Context context) {
         this.data = data;
@@ -51,6 +56,7 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.MyAdapter> {
     public int getItemCount() {
         return data.size();
     }
+
 
     public class MyAdapter extends RecyclerView.ViewHolder {
         private ItemBinding itemBinding;

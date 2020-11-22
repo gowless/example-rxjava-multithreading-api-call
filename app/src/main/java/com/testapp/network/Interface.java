@@ -13,7 +13,7 @@ public interface Interface {
     //query for repos
     @GET("search/repositories")
     Observable<Main> getData(
-            @Query("q") String appId,
+            @Query("q") String query,
             @Query("per_page") String number,
             @Query("page") String page_number,
             @Query("sort") String sort
